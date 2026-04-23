@@ -374,7 +374,7 @@
   .illustration-frame {
     position: relative;
     aspect-ratio: 3 / 4;
-    background: #E8E0D0; border-radius: 8px;
+    background: transparent; border-radius: 8px;
     border: none;
     overflow: hidden;
   }
@@ -384,12 +384,7 @@
   }
 
   .illustration-frame::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(218,0,0,0.03), transparent 50%, rgba(42,37,32,0.05));
-    z-index: 3;
-    pointer-events: none;
+    display: none;
   }
 
   .illust-svg {
